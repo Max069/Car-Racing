@@ -3,6 +3,12 @@ class Form{
 
     display(){
 
+        this.reset= createButton("reset")
+        this.reset.position(width-200,50)
+        this.reset.mousePressed(()=>{
+            player.updateCount(0)
+            game.update(0)
+        })
 
         this.title= createElement('h2')
         this.title.html("CAR RACING GAME")
